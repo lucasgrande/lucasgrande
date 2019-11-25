@@ -1,0 +1,100 @@
+<!DOCTYPE html>
+<html>
+<head>
+	<title>Aspectos Metabólicos 2</title>
+	<meta charset="utf-8">
+	<meta name="viewport" content="width=device-width, initial-scale=1.0">
+	<link rel="stylesheet" type="text/css" href="style.css">
+	<link rel="stylesheet" href="https://stackpath.bootstrapcdn.com/bootstrap/4.3.1/css/bootstrap.min.css" integrity="sha384-ggOyR0iXCbMQv3Xipma34MD+dH/1fQ784/j6cY/iJTQUOhcWr7x9JvoRxT2MZw1T" crossorigin="anonymous">
+</head>
+<body>
+
+<div class="container-fluid fundo-app">
+	<div class="row">
+		<div class="col-12 text-center titulo-app">
+			<h1>Gasto calórico basal diário</h1>
+		</div>
+	</div>
+
+	<div class="row formulario-app">
+		<!-- peso -->
+		<div class="col-12">
+			<label>Peso:</label>
+		</div>
+
+		<div class="col-9 pr-0">
+			<input type="text" name="peso" id="peso">
+		</div>
+		<div class="col-3 pl-0">
+			<div class="fundo-medida text-center">
+				kg
+			</div>
+		</div>
+
+		<!-- altura -->
+		<div class="col-12">
+			<label>Altura:</label>
+		</div>
+
+		<div class="col-9 pr-0">
+			<input type="text" name="altura" id="altura">
+		</div>
+		<div class="col-3 pl-0">
+			<div class="fundo-medida text-center">
+				cm
+			</div>
+		</div>
+
+		<!-- idade -->
+		<div class="col-12">
+			<label>Idade:</label>
+		</div>
+
+		<div class="col-9 pr-0">
+			<input type="text" name="idade" id="idade">
+		</div>
+		<div class="col-3 pl-0">
+			<div class="fundo-medida text-center">
+				anos
+			</div>
+		</div>
+
+		<!-- validar -->
+
+		<div class="col-12">
+			<label>Sexo:</label>
+		</div>
+
+		<div class="col-6 text-right">
+			Masculino <input type="radio" name="gender" id="gender_Male" value="Masculino" />
+		</div>
+
+		<div class="col-6">
+			Feminino <input type="radio" name="gender" id="gender_Female" value="Feminino" />
+		</div>
+
+		<div class="col-12">
+			<button onclick="gastoRepouso()" id="calculoRepouso">
+				Gasto calórico basal diário
+			</button>
+		</div>
+
+		<!-- resultado -->
+		<div class="col-12 texto-resultado">
+			<p id="resultado">
+
+			</p>
+		</div>
+
+		<div class="offset-6 col-6 paginacao">
+			<button>
+				<a href="segunda-formula.html"/>Próxima página</a>
+			</button>
+		</div>
+
+	</div>
+</div>
+
+<script type="text/javascript" src="scripts.js"></script>
+</body>
+</html>
